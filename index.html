@@ -1,0 +1,1215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeByUmar — Muhammad Umar</title>
+    <meta
+      name="description"
+      content="Muhammad Umar — Web Developer, App Developer & Digital Creator from Pakistan. Custom websites, Shopify stores, and mobile apps."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Barlow:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor-lg" id="cursorLg"></div>
+    <div class="cursor-sm" id="cursorSm"></div>
+
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a href="#home" class="logo">
+          <img
+            src="assets/logo.png"
+            alt="CodeByUmar Logo"
+            class="logo-img"
+            id="logoImg"
+          />
+          <span class="logo-text">CodeByUmar</span>
+        </a>
+        <nav class="main-nav" id="mainNav">
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#contact" class="nav-link nav-cta">Hire Me</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+      <button class="mobile-nav-close" id="mobileNavClose">&#10005;</button>
+      <ul class="mobile-nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact" class="mobile-cta">Hire Me</a></li>
+      </ul>
+    </div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <img
+          src="assets/hero-bg.jpeg"
+          alt="Hero Background"
+          class="hero-bg-img"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+      </div>
+
+      <!-- LEFT SIDE SOCIAL — vertically centered on the left edge -->
+      <div class="hero-social">
+        <span class="social-label">Follow Me</span>
+        <ul class="social-links">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/codebyumar/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/codebyumar_/"
+              target="_blank"
+              rel="noopener"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.tiktok.com/@codebyumar"
+              target="_blank"
+              rel="noopener"
+              >TikTok</a
+            >
+          </li>
+        </ul>
+        <div class="social-line"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Available for new projects
+          </div>
+          <h1 class="hero-title">
+            <span class="title-line reveal-text">Creativity In</span>
+            <span class="title-line reveal-text delay-1"
+              >My <em>Bloodline</em></span
+            >
+          </h1>
+          <p class="hero-subtitle reveal-up">
+            I build elegant digital experiences — from custom web platforms to
+            mobile apps and Shopify stores. Code is my craft, quality is my
+            standard.
+          </p>
+          <div class="hero-actions reveal-up delay-2">
+            <a href="#portfolio" class="btn btn-primary">
+              <span>View My Work</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M1 8h14M9 2l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">Let's Talk</a>
+          </div>
+        </div>
+        <div class="hero-image-wrap reveal-right">
+          <div class="hero-img-frame">
+            <img
+              src="assets/portrait.png"
+              alt="Muhammad Umar"
+              class="hero-portrait"
+            />
+            <div class="frame-glow"></div>
+          </div>
+          <div class="hero-card hero-card-1">
+            <!-- <span class="card-icon">💻</span> -->
+            <div>
+              <strong>10+</strong>
+              <p>Projects Done</p>
+            </div>
+          </div>
+          <div class="hero-card hero-card-2">
+            <!-- <span class="card-icon">⭐</span> -->
+            <div>
+              <strong>100%</strong>
+              <p>Client Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#funfacts" class="scroll-down">
+        <span class="scroll-dot"></span>
+      </a>
+    </section>
+
+    <!-- ===== FUN FACTS ===== -->
+    <section class="funfacts" id="funfacts">
+      <div class="funfacts-bg-text">STATS</div>
+      <div class="container funfacts-inner">
+        <div class="funfacts-left">
+          <h3 class="section-sub">My Numbers</h3>
+          <h2 class="section-title">Work speaks <br /><em>for itself</em></h2>
+          <p class="section-desc">
+            Real results. Real clients. Real code. Shipped and running in the
+            wild.
+          </p>
+        </div>
+        <div class="funfacts-right">
+          <div class="fact-card">
+            <div class="fact-number" data-target="10">0</div>
+            <div class="fact-suffix">+</div>
+            <div class="fact-label">Happy Clients</div>
+          </div>
+          <div class="fact-card">
+            <div class="fact-number" data-target="10">0</div>
+            <div class="fact-suffix">+</div>
+            <div class="fact-label">Projects Completed</div>
+          </div>
+          <div class="fact-card">
+            <div class="fact-number" data-target="5">0</div>
+            <div class="fact-suffix"></div>
+            <div class="fact-label">Team Members</div>
+          </div>
+          <div class="fact-card">
+            <div class="fact-number" data-target="2">0</div>
+            <div class="fact-suffix"></div>
+            <div class="fact-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+      <div class="container about-inner">
+        <div class="about-image-side">
+          <div class="about-img-wrap">
+            <img
+              src="assets/portrait.png"
+              alt="Muhammad Umar"
+              class="about-portrait"
+            />
+            <div class="about-badge-float">
+              <!-- <span>🚀</span> -->
+              <p>Code by Umar</p>
+            </div>
+          </div>
+          <div class="about-skills-strip">
+            <span>React</span><span>Flutter</span><span>Shopify</span
+            ><span>Laravel</span><span>WordPress</span><span>Node.js</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <h3 class="section-sub">About Me</h3>
+          <h2 class="section-title">Hi, I'm <em>Muhammad Umar</em></h2>
+          <p class="about-lead">
+            Developer. Creator. Problem-solver. 📌Based in Islamabad / Sargodha,
+            Pakistan.
+          </p>
+          <p class="section-desc">
+            I'm a full-stack developer and digital creator who builds
+            high-quality websites, mobile applications, and Shopify stores. From
+            concept to deployment, I handle every line with purpose. My clients
+            get clean code, stunning design, and results that actually move the
+            needle.
+          </p>
+          <p class="section-desc" style="margin-top: 12px">
+            When I'm not coding, I'm creating content that demystifies
+            development for thousands of people because great technology should
+            be accessible to everyone.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="10" fill="var(--accent)" />
+                <path
+                  d="M6 10l3 3 5-5"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Custom Web Development
+            </div>
+            <div class="highlight">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="10" fill="var(--accent)" />
+                <path
+                  d="M6 10l3 3 5-5"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Mobile App Development
+            </div>
+            <div class="highlight">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="10" fill="var(--accent)" />
+                <path
+                  d="M6 10l3 3 5-5"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Shopify Store Setup & Optimization
+            </div>
+            <div class="highlight">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="10" fill="var(--accent)" />
+                <path
+                  d="M6 10l3 3 5-5"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Digital Content Creation
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary"
+            >Work With Me
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M1 8h14M9 2l6 6-6 6"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head text-center">
+          <h3 class="section-sub">What I Do</h3>
+          <h2 class="section-title">Services I Can <em>Help You With</em></h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card" data-index="01">
+            <div class="service-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect
+                  width="40"
+                  height="40"
+                  rx="12"
+                  fill="var(--accent)"
+                  fill-opacity="0.1"
+                />
+                <path
+                  d="M8 14h24M8 20h16M8 26h20"
+                  stroke="var(--accent)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle
+                  cx="28"
+                  cy="26"
+                  r="5"
+                  stroke="var(--accent)"
+                  stroke-width="2"
+                />
+                <path
+                  d="M32 30l3 3"
+                  stroke="var(--accent)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3 class="service-title">Custom Web Development</h3>
+            <p class="service-desc">
+              Pixel-perfect, high-performance websites built from scratch.
+              WordPress, Laravel, React tailored to your brand and goals.
+            </p>
+            <div class="service-tags">
+              <span>WordPress</span><span>React</span><span>Laravel</span>
+            </div>
+            <a href="#contact" class="service-link">Get a Quote →</a>
+          </div>
+
+          <div class="service-card" data-index="02">
+            <div class="service-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect
+                  width="40"
+                  height="40"
+                  rx="12"
+                  fill="var(--accent)"
+                  fill-opacity="0.1"
+                />
+                <rect
+                  x="12"
+                  y="7"
+                  width="16"
+                  height="26"
+                  rx="3"
+                  stroke="var(--accent)"
+                  stroke-width="2"
+                />
+                <circle cx="20" cy="30" r="1.5" fill="var(--accent)" />
+              </svg>
+            </div>
+            <h3 class="service-title">App Development</h3>
+            <p class="service-desc">
+              Cross-platform mobile applications built with Flutter. From splash
+              screen to backend integration end to end.
+            </p>
+            <div class="service-tags">
+              <span>Flutter</span><span>Firebase</span><span>REST API</span>
+            </div>
+            <a href="#contact" class="service-link">Get a Quote →</a>
+          </div>
+
+          <div class="service-card" data-index="03">
+            <div class="service-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect
+                  width="40"
+                  height="40"
+                  rx="12"
+                  fill="var(--accent)"
+                  fill-opacity="0.1"
+                />
+                <path
+                  d="M10 30s3-8 10-8 10 8 10 8"
+                  stroke="var(--accent)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M20 10a5 5 0 0 1 5 5c0 3-5 7-5 7s-5-4-5-7a5 5 0 0 1 5-5z"
+                  stroke="var(--accent)"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <h3 class="service-title">Shopify Store Setup</h3>
+            <p class="service-desc">
+              Professional Shopify stores designed to convert theme setup,
+              product pages, integrations, and speed optimization.
+            </p>
+            <div class="service-tags">
+              <span>Shopify</span><span>Liquid</span><span>E-commerce</span>
+            </div>
+            <a href="#contact" class="service-link">Get a Quote →</a>
+          </div>
+
+          <div class="service-card" data-index="04">
+            <div class="service-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect
+                  width="40"
+                  height="40"
+                  rx="12"
+                  fill="var(--accent)"
+                  fill-opacity="0.1"
+                />
+                <path
+                  d="M20 8v8M12 16h16M14 24l6 8 6-8"
+                  stroke="var(--accent)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 class="service-title">Content Creation</h3>
+            <p class="service-desc">
+              Tech-focused digital content across Instagram, TikTok & LinkedIn.
+              Education + entertainment that actually grows an audience.
+            </p>
+            <div class="service-tags">
+              <span>TikTok</span><span>Instagram</span><span>LinkedIn</span>
+            </div>
+            <a href="#contact" class="service-link">Collaborate →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h3 class="section-sub">Latest Projects</h3>
+            <h2 class="section-title">Portfolio to <em>Explore</em></h2>
+          </div>
+          <p class="section-desc portfolio-desc">
+            Real projects. Real clients. Each built with precision and purpose.
+          </p>
+        </div>
+
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Dev</button>
+          <button class="filter-btn" data-filter="shopify">Shopify</button>
+          <button class="filter-btn" data-filter="app">App Dev</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Cinqo Migration -->
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-img-wrap proj-visual cinqo">
+              <div class="proj-icon-wrap">
+                <svg
+                  class="proj-big-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path
+                    d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  />
+                </svg>
+                <span class="proj-label">cinqomigration.com</span>
+              </div>
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>Cinqo Migration</h3>
+                  <p>Custom Web Platform</p>
+                  <a
+                    href="https://cinqomigration.com"
+                    target="_blank"
+                    rel="noopener"
+                    class="overlay-btn"
+                    >View Live →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Web Development</span>
+              <h3 class="portfolio-title">Cinqo Migration</h3>
+              <p class="portfolio-desc-text">
+                A professional immigration consultancy platform built on
+                WordPress with custom theme development, service pages, and
+                inquiry forms.
+              </p>
+              <div class="portfolio-meta">
+                <span>WordPress</span><span>Custom Theme</span
+                ><span>Laravel</span>
+              </div>
+              <a
+                href="https://cinqomigration.com"
+                target="_blank"
+                rel="noopener"
+                class="portfolio-link"
+                >cinqomigration.com →</a
+              >
+            </div>
+          </div>
+
+          <!-- Buildpro Services -->
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-img-wrap proj-visual build">
+              <div class="proj-icon-wrap">
+                <svg
+                  class="proj-big-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+                <span class="proj-label">buildproservices.uk</span>
+              </div>
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>Buildpro Services</h3>
+                  <p>Business Website — UK</p>
+                  <a
+                    href="https://buildproservices.uk"
+                    target="_blank"
+                    rel="noopener"
+                    class="overlay-btn"
+                    >View Live →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Web Development</span>
+              <h3 class="portfolio-title">Buildpro Services UK</h3>
+              <p class="portfolio-desc-text">
+                A construction & property services company based in the UK.
+                Modern, high-converting business website with service listings,
+                project gallery, and contact systems.
+              </p>
+              <div class="portfolio-meta">
+                <span>WordPress</span><span>Custom Design</span><span>SEO</span>
+              </div>
+              <a
+                href="https://buildproservices.uk"
+                target="_blank"
+                rel="noopener"
+                class="portfolio-link"
+                >buildproservices.uk →</a
+              >
+            </div>
+          </div>
+
+          <!-- Nouravi -->
+          <div class="portfolio-item" data-category="shopify">
+            <div class="portfolio-img-wrap proj-visual nour">
+              <div class="proj-icon-wrap">
+                <svg
+                  class="proj-big-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                  />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 0 1-8 0" />
+                </svg>
+                <span class="proj-label">nouravi.co</span>
+              </div>
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>Nouravi</h3>
+                  <p>Shopify E-commerce Store</p>
+                  <a
+                    href="https://www.nouravi.co"
+                    target="_blank"
+                    rel="noopener"
+                    class="overlay-btn"
+                    >View Live →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Shopify</span>
+              <h3 class="portfolio-title">Nouravi.co</h3>
+              <p class="portfolio-desc-text">
+                A premium Shopify store with custom theme setup, optimized
+                product pages, fast checkout flow, and full e-commerce
+                configuration for conversions.
+              </p>
+              <div class="portfolio-meta">
+                <span>Shopify</span><span>Liquid</span><span>CRO</span>
+              </div>
+              <a
+                href="https://www.nouravi.co"
+                target="_blank"
+                rel="noopener"
+                class="portfolio-link"
+                >nouravi.co →</a
+              >
+            </div>
+          </div>
+
+          <!-- Rocart -->
+          <div class="portfolio-item" data-category="shopify">
+            <div class="portfolio-img-wrap proj-visual rocart">
+              <div class="proj-icon-wrap">
+                <svg
+                  class="proj-big-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="9" cy="21" r="1" />
+                  <circle cx="20" cy="21" r="1" />
+                  <path
+                    d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                  />
+                </svg>
+                <span class="proj-label">rocart.store</span>
+              </div>
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>Rocart Store</h3>
+                  <p>Shopify E-commerce Store</p>
+                  <a
+                    href="https://rocart.store"
+                    target="_blank"
+                    rel="noopener"
+                    class="overlay-btn"
+                    >View Live →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Shopify</span>
+              <h3 class="portfolio-title">Rocart.store</h3>
+              <p class="portfolio-desc-text">
+                Custom Shopify store built for a creative brand. Theme
+                customization, product catalog setup, payment gateway
+                configuration, and mobile-first design.
+              </p>
+              <div class="portfolio-meta">
+                <span>Shopify</span><span>Custom Theme</span
+                ><span>Mobile-First</span>
+              </div>
+              <a
+                href="https://rocart.store"
+                target="_blank"
+                rel="noopener"
+                class="portfolio-link"
+                >rocart.store →</a
+              >
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="app">
+            <div class="portfolio-img-wrap app-screenshots">
+              <div class="app-screens-container">
+                <img
+                  src="assets/app-screen-1.png"
+                  alt="DoodhDahi App"
+                  class="app-screen screen-1"
+                />
+                <img
+                  src="assets/app-screen-2.png"
+                  alt="DoodhDahi App"
+                  class="app-screen screen-2"
+                />
+                <img
+                  src="assets/app-screen-3.png"
+                  alt="DoodhDahi App"
+                  class="app-screen screen-3"
+                />
+              </div>
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>DoodhDahi App</h3>
+                  <p>Flutter Mobile Application</p>
+                  <span class="overlay-btn no-link">Powered by Maniac</span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">App Development</span>
+              <h3 class="portfolio-title">DoodhDahi — Milk Delivery App</h3>
+              <p class="portfolio-desc-text">
+                A full-featured Flutter mobile app for fresh dairy delivery.
+                User auth, order tracking, shop management, push notifications,
+                and payment integration. Powered by Maniac Studio.
+              </p>
+              <div class="portfolio-meta">
+                <span>Flutter</span><span>Firebase</span><span>REST API</span
+                ><span>Android/iOS</span>
+              </div>
+              <div class="portfolio-link app-note">
+                📱 Live on Android & iOS
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee-section">
+      <div class="marquee-track">
+        <span>Custom Websites</span>
+        <span class="accent-dot">✦</span>
+        <span>Mobile Apps</span>
+        <span class="accent-dot">✦</span>
+        <span>Shopify Stores</span>
+        <span class="accent-dot">✦</span>
+        <span>Content Creation</span>
+        <span class="accent-dot">✦</span>
+        <span>UI/UX Design</span>
+        <span class="accent-dot">✦</span>
+        <span>CodeByUmar</span>
+        <span class="accent-dot">✦</span>
+        <span>Custom Websites</span>
+        <span class="accent-dot">✦</span>
+        <span>Mobile Apps</span>
+        <span class="accent-dot">✦</span>
+        <span>Shopify Stores</span>
+        <span class="accent-dot">✦</span>
+        <span>Content Creation</span>
+        <span class="accent-dot">✦</span>
+        <span>UI/UX Design</span>
+        <span class="accent-dot">✦</span>
+        <span>CodeByUmar</span>
+        <span class="accent-dot">✦</span>
+      </div>
+    </div>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq" id="faq">
+      <div class="container faq-inner">
+        <div class="faq-left">
+          <h3 class="section-sub">FAQ</h3>
+          <h2 class="section-title">Common <em>Questions</em></h2>
+          <p class="section-desc">
+            Still have something in mind? Just reach out directly.
+          </p>
+          <a href="#contact" class="btn btn-primary" style="margin-top: 2rem">
+            Ask Me Directly
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M1 8h14M9 2l6 6-6 6"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="faq-right">
+          <div class="faq-item">
+            <button class="faq-question">
+              How long does a website take to build?<span class="faq-icon"
+                >+</span
+              >
+            </button>
+            <div class="faq-answer">
+              <p>
+                A standard website typically takes 1–3 weeks depending on
+                complexity. Shopify stores can be up in 3–7 days. Custom web
+                apps or mobile projects take 4–8 weeks. I always provide a clear
+                timeline upfront.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you provide source files after the project?<span
+                class="faq-icon"
+                >+</span
+              >
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes — all project files, assets, and credentials are handed over
+                upon completion. You own your code, your store, your app. No
+                lock-in.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              How do I provide project details and pay?<span class="faq-icon"
+                >+</span
+              >
+            </button>
+            <div class="faq-answer">
+              <p>
+                Start by filling out the contact form below or emailing me
+                directly. We'll have a discovery call, I'll send a proposal, and
+                we go from there. Payment is typically 50% upfront, 50% on
+                delivery.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you work with international clients?<span class="faq-icon"
+                >+</span
+              >
+            </button>
+            <div class="faq-answer">
+              <p>
+                Absolutely. I've worked with clients in the UK, across Europe,
+                and the US. I communicate clearly and work across time zones
+                without issues.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Can you redesign my existing website?<span class="faq-icon"
+                >+</span
+              >
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes! Redesigns are one of my specialties. I'll audit your
+                current site, understand your goals, and rebuild it better —
+                faster, cleaner, and more conversion-focused.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section">
+      <div class="cta-bg"><div class="cta-glow"></div></div>
+      <div class="container cta-inner">
+        <h2 class="cta-title">
+          Let's build something <em>remarkable</em> together
+        </h2>
+        <p class="cta-sub">
+          Have a project? An idea? A problem to solve? I'm all ears.
+        </p>
+        <a href="#contact" class="btn btn-primary btn-large">
+          Start a Project
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+            <path
+              d="M1 8h14M9 2l6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <div class="container contact-inner">
+        <div class="contact-left">
+          <h3 class="section-sub">Get In Touch</h3>
+          <h2 class="section-title">Let's <em>Talk</em></h2>
+          <p class="section-desc">
+            Whether you have a project in mind or just want to say hello — I'm
+            always open to a conversation.
+          </p>
+          <ul class="contact-info">
+            <li>
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path
+                    d="M2.5 6.667C2.5 5.747 3.247 5 4.167 5h11.666C16.753 5 17.5 5.747 17.5 6.667v6.666c0 .92-.747 1.667-1.667 1.667H4.167C3.247 15 2.5 14.253 2.5 13.333V6.667z"
+                    stroke="var(--accent)"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M2.5 6.667L10 10.833l7.5-4.166"
+                    stroke="var(--accent)"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div>
+                <span>Email</span
+                ><a
+                  href="/cdn-cgi/l/email-protection#dbb8b4bfbeb9a2aeb6baa9ec9bbcb6bab2b7f5b8b4b6"
+                  ><span
+                    class="__cf_email__"
+                    data-cfemail="d6b5b9b2b3b4afa3bbb7a4e196b1bbb7bfbaf8b5b9bb"
+                    >[email&#160;protected]</span
+                  ></a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path
+                    d="M10 2C6.686 2 4 4.686 4 8c0 5 6 10 6 10s6-5 6-10c0-3.314-2.686-6-6-6z"
+                    stroke="var(--accent)"
+                    stroke-width="1.5"
+                  />
+                  <circle
+                    cx="10"
+                    cy="8"
+                    r="2"
+                    stroke="var(--accent)"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </div>
+              <div>
+                <span>Location</span>
+                <p>Islamabad / Sargodha, Pakistan</p>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path
+                    d="M3.5 4.5C3.5 4.5 5 3 6.5 3c.5 0 1 .2 1.3.6l1.7 2.3c.3.4.3 1 0 1.4L8.4 8.6c.6 1.1 1.5 2 2.6 2.6l1.3-1.1c.4-.3 1-.3 1.4 0l2.3 1.7c.4.3.6.8.6 1.3 0 1.5-1.5 3-1.5 3C6 17 3 11 3.5 4.5z"
+                    stroke="var(--accent)"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div>
+                <span>WhatsApp (Professional inquiries only)</span
+                ><a
+                  href="https://wa.me/923402203821"
+                  target="_blank"
+                  rel="noopener"
+                  >+92 340 220 3821</a
+                >
+              </div>
+            </li>
+          </ul>
+          <div class="contact-social">
+            <a
+              href="https://www.linkedin.com/in/codebyumar/"
+              target="_blank"
+              rel="noopener"
+              class="social-pill"
+              >LinkedIn</a
+            >
+            <a
+              href="https://www.instagram.com/codebyumar_/"
+              target="_blank"
+              rel="noopener"
+              class="social-pill"
+              >Instagram</a
+            >
+            <a
+              href="https://www.tiktok.com/@codebyumar"
+              target="_blank"
+              rel="noopener"
+              class="social-pill"
+              >TikTok</a
+            >
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john@example.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option value="web">Custom Web Development</option>
+                <option value="app">App Development</option>
+                <option value="shopify">Shopify Store Setup</option>
+                <option value="content">Content Creation</option>
+                <option value="other">Other / Let's Discuss</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project, budget, and timeline..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M1 8h14M9 2l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              ✅ Message sent! I'll get back to you within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#home" class="logo"
+              ><span class="logo-text">CodeByUmar</span></a
+            >
+            <p>
+              Building digital experiences that matter. Based in Pakistan,
+              working with the world.
+            </p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-col">
+              <h4>Navigation</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#services">Web Development</a></li>
+                <li><a href="#services">App Development</a></li>
+                <li><a href="#services">Shopify Stores</a></li>
+                <li><a href="#services">Content Creation</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Connect</h4>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/codebyumar/"
+                    target="_blank"
+                    rel="noopener"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/codebyumar_/"
+                    target="_blank"
+                    rel="noopener"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.tiktok.com/@codebyumar"
+                    target="_blank"
+                    rel="noopener"
+                    >TikTok</a
+                  >
+                </li>
+                <!-- <li>
+                  <a
+                    href="/cdn-cgi/l/email-protection#0f6c606b6a6d767a626e7d384f68626e6663216c6062"
+                    >Email</a
+                  >
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © 2026 <strong>CodeByUmar</strong> — Muhammad Umar. All rights
+            reserved.
+          </p>
+          <!-- <p>Built with ❤️ and clean code.</p> -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path
+          d="M10 16V4M4 10l6-6 6 6"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+      // Fix: Portfolio nav active — lower threshold so tall sections trigger correctly
+      (function () {
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".nav-link");
+        const fixObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                navLinks.forEach((link) => {
+                  link.classList.remove("active");
+                  if (link.getAttribute("href") === "#" + entry.target.id) {
+                    link.classList.add("active");
+                  }
+                });
+              }
+            });
+          },
+          { threshold: 0.1, rootMargin: "-80px 0px -40% 0px" },
+        );
+        sections.forEach((s) => fixObserver.observe(s));
+      })();
+    </script>
+  </body>
+</html>
